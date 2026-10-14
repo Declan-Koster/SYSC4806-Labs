@@ -1,0 +1,13 @@
+HTTP Requests
+
+1.
+curl.exe -X POST http://localhost:8080/addressBooks -H "Content-Type: application/json" -d "{}"
+
+2.
+curl.exe -X POST http://localhost:8080/buddyInfoes -H "Content-Type: application/json" -d '{\"name\":\"Alex\",\"number\":\"555-6543\"}'
+
+3.
+curl.exe -X POST http://localhost:8080/addressBooks/3/friends -H "Content-Type: text/uri-list" -d "http://localhost:8080/buddyInfoes/5"
+
+4.
+curl.exe http://localhost:8080/addressBooks/3/friends
