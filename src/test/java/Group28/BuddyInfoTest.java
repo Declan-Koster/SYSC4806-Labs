@@ -27,5 +27,13 @@ public class BuddyInfoTest {
 
     }
 
+    @Test
+    void testAddress() {
+        BuddyInfo buddy = new BuddyInfo("Alex", "123-6543");
+
+        buddy.setAddress("123 Main Street");
+
+        assertEquals("123 Main Street", buddy.getAddress());
+    }
 
 }

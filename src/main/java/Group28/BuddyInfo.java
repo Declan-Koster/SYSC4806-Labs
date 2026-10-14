@@ -14,6 +14,7 @@ public class BuddyInfo {
 
     private String name;
     private String number;
+    private String address;
 
     public BuddyInfo() {
     }
@@ -35,6 +36,8 @@ public class BuddyInfo {
         return number;
     }
 
+    public String getAddress() {return address;}
+
     public void setName(String name) {
         this.name = name;
     }
@@ -42,6 +45,8 @@ public class BuddyInfo {
     public void setNumber(String number) {
         this.number = number;
     }
+
+    public void setAddress(String address) {this.address = address;}
 
     public void setId(Long id) {
         this.id = id;
